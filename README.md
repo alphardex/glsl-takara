@@ -23,13 +23,14 @@ npm i glsl-takara
 
 👤 **alphardex**
 
-* Website: https://alphardex.netlify.app
-* Twitter: [@alphardex007](https://twitter.com/alphardex007)
-* Github: [@alphardex](https://github.com/alphardex)
+- Website: https://alphardex.netlify.app
+- Twitter: [@alphardex007](https://twitter.com/alphardex007)
+- Github: [@alphardex](https://github.com/alphardex)
 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
 
-***
+---
+
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
