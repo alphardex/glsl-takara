@@ -5,4 +5,4 @@ vec2 centerUv(vec2 uv,vec2 resolution){
     return uv;
 }
 
-#pragma glslify:export(centerUv);
+#pragma glslify:export(centerUv)

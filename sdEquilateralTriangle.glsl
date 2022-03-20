@@ -7,4 +7,5 @@ float sdEquilateralTriangle(in vec2 p)
     p.x-=clamp(p.x,-2.,0.);
     return-length(p)*sign(p.y);
 }
-#pragma glslify:export(sdEquilateralTriangle);
+
+#pragma glslify:export(sdEquilateralTriangle)
