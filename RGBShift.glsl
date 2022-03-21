@@ -3,9 +3,9 @@ vec3 blackAndWhite(vec3 color){
 }
 
 vec4 RGBShift(sampler2D t,vec2 rUv,vec2 gUv,vec2 bUv,float isBlackWhite){
-    vec4 color1=texture2D(t,rUv);
-    vec4 color2=texture2D(t,gUv);
-    vec4 color3=texture2D(t,bUv);
+    vec4 color1=texture(t,rUv);
+    vec4 color2=texture(t,gUv);
+    vec4 color3=texture(t,bUv);
     if(isBlackWhite==1.){
         color1.rgb=blackAndWhite(color1.rgb);
         color2.rgb=blackAndWhite(color2.rgb);

@@ -13,7 +13,7 @@ float perspectiveDepthToViewZ(const in float invClipZ,const in float near,const 
 
 // From: three.js\examples\webgl_depth_texture.html
 float readDepth(sampler2D depthSampler,vec2 coord,float camNear,float camFar){
-    float fragCoordZ=texture2D(depthSampler,coord).x;
+    float fragCoordZ=texture(depthSampler,coord).x;
     float viewZ=perspectiveDepthToViewZ(fragCoordZ,camNear,camFar);
     return viewZToOrthographicDepth(viewZ,camNear,camFar);
 }
