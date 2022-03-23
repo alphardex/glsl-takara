@@ -1,6 +1,12 @@
-// https://www.shadertoy.com/view/Ms2SD1
-float diffuse(vec3 l,vec3 n,float p){
-    return pow(dot(n,l)*.4+.6,p);
+// https://learnopengl.com/Lighting/Basic-Lighting
+
+float saturate(float a){
+    return clamp(a,0.,1.);
+}
+
+float diffuse(vec3 n,vec3 l){
+    float diff=saturate(dot(n,l));
+    return diff;
 }
 
 #pragma glslify:export(diffuse)
