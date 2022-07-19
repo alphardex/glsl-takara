@@ -1,17 +1,25 @@
-float map(float value,float inMin,float inMax,float outMin,float outMax){
-    return outMin+(outMax-outMin)*(value-inMin)/(inMax-inMin);
+float map(float a,float b,float c,float d,float t)
+{
+    float v=(t-a)/(b-a)*(d-c)+c;
+    return v;
 }
 
-vec2 map(vec2 value,vec2 inMin,vec2 inMax,vec2 outMin,vec2 outMax){
-    return outMin+(outMax-outMin)*(value-inMin)/(inMax-inMin);
+vec2 map(vec2 a,vec2 b,vec2 c,vec2 d,vec2 t)
+{
+    vec2 v=(t-a)/(b-a)*(d-c)+c;
+    return v;
 }
 
-vec3 map(vec3 value,vec3 inMin,vec3 inMax,vec3 outMin,vec3 outMax){
-    return outMin+(outMax-outMin)*(value-inMin)/(inMax-inMin);
+vec3 map(vec3 a,vec3 b,vec3 c,vec3 d,vec3 t)
+{
+    vec3 v=(t-a)/(b-a)*(d-c)+c;
+    return v;
 }
 
-vec4 map(vec4 value,vec4 inMin,vec4 inMax,vec4 outMin,vec4 outMax){
-    return outMin+(outMax-outMin)*(value-inMin)/(inMax-inMin);
+vec4 map(vec4 a,vec4 b,vec4 c,vec4 d,vec4 t)
+{
+    vec4 v=(t-a)/(b-a)*(d-c)+c;
+    return v;
 }
 
 #pragma glslify:export(map)
